@@ -1,0 +1,9 @@
+- name: GitHub
+  link: https://github.com/ahmed-sudani
+  icon: Github
+- name: LinkedIn
+  link: https://linkedin.com/in/ahmed-elbilal
+  icon: Linkedin
+- name: Email
+  link: mailto:ahmed.sudani570@gmail.com
+  icon: Mail

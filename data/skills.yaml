@@ -1,0 +1,83 @@
+- name: frontend
+  icon: Code
+  color: from-blue-500 to-cyan-400
+  skills:
+    - name: React
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg
+    - name: Next
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg
+    - name: JavaScript
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg
+    - name: TypeScript
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg
+    - name: HTML5
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg
+    - name: CSS3
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg
+    - name: Tailwind CSS
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg
+    - name: Redux
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg
+    - name: Gatsby
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-original.svg
+
+- name: backend
+  icon: Terminal
+  color: from-green-500 to-emerald-400
+  skills:
+    - name: Node.js
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg
+    - name: Nest
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg
+    - name: Express
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg
+    - name: GraphQL
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg
+
+- name: database
+  icon: Database
+  color: from-purple-500 to-violet-400
+  skills:
+    - name: MongoDB
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg
+    - name: PostgreSQL
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg
+    - name: MySQL
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg
+    - name: Redis
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg
+    - name: Firebase
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg
+
+- name: mobile
+  icon: Smartphone
+  color: from-orange-500 to-amber-400
+  skills:
+    - name: React Native
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg
+    - name: Flutter
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg
+
+- name: devops
+  icon: Cloud
+  color: from-red-500 to-pink-400
+  skills:
+    - name: Docker
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg
+    - name: Kubernetes
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg
+    - name: AWS
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg
+    - name: Git
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg
+
+- name: other
+  icon: Cpu
+  color: from-gray-500 to-slate-400
+  skills:
+    - name: Figma
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg
+    - name: Jest
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg
+    - name: Webpack
+      logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg

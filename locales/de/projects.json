@@ -1,0 +1,26 @@
+{
+  "ecommerce_platform": {
+    "title": "E-Commerce-Plattform",
+    "description": "Eine Full-Stack E-Commerce-Anwendung mit Zahlungsintegration, Benutzer-Authentifizierung und Admin-Dashboard."
+  },
+  "social_media_dashboard": {
+    "title": "Social Media Dashboard",
+    "description": "Ein responsives Dashboard, das Social-Media-Metriken von mehreren Plattformen aggregiert und visualisiert."
+  },
+  "task_management_app": {
+    "title": "Aufgabenverwaltungs-App",
+    "description": "Kollaborative Aufgabenverwaltungsanwendung mit Echtzeit-Updates und Team-Kollaborationsfunktionen."
+  },
+  "weather_application": {
+    "title": "Wetteranwendung",
+    "description": "Echtzeit-Wettervorhersage-App mit Standorterkennung und interaktiven Karten."
+  },
+  "portfolio_website": {
+    "title": "Portfolio-Website",
+    "description": "Persönliche Portfolio-Website gebaut mit Gatsby und Tailwind CSS, mit Animationen und responsivem Design."
+  },
+  "finance_tracker": {
+    "title": "Finanz-Tracker",
+    "description": "Persönliche Finanz-Tracking-App mit Ausgabenkategorisierung und Visualisierung."
+  }
+}
