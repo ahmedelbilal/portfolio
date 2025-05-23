@@ -1,7 +1,6 @@
 // src/components/SEO.tsx
 import React, { PropsWithChildren } from "react";
 import { useSiteMetadata } from "../hooks/use-site-metadata";
-import { useI18next } from "gatsby-plugin-react-i18next";
 
 type SeoProps = {
   title?: string;
@@ -43,7 +42,7 @@ export const SEO: React.FC<PropsWithChildren<SeoProps>> = ({
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${image}`,
+    image: `/images/og-${lang}.png`,
     url: `${siteUrl}${currentPathname}`, // Use the actual current URL for Open Graph/Twitter
     twitterUsername,
   };
@@ -61,7 +60,7 @@ export const SEO: React.FC<PropsWithChildren<SeoProps>> = ({
       <meta property="og:url" content={seo.url} />
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
-      <meta property="og:image" content={`/images/og-${lang}.png`} />
+      <meta property="og:image" content={seo.image} />
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={seo.title} />
