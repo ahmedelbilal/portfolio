@@ -37,8 +37,6 @@ export const SEO: React.FC<PropsWithChildren<SeoProps>> = ({
     originalPath = currentPathname.substring(3);
   }
 
-  console.log({ originalPath, currentPathname });
-
   canonicalUrl = `${siteUrl}${currentPathname}`;
 
   // SEO metadata for Open Graph, Twitter, etc.
