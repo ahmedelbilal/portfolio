@@ -1,26 +1,18 @@
 {
-  "ecommerce_platform": {
-    "title": "Piattaforma E-Commerce",
-    "description": "Un'applicazione e-commerce full-stack con integrazione dei pagamenti, autenticazione utente e pannello di amministrazione."
+  "lidolink": {
+    "title": "LidoLink – Assistente di Viaggio con Intelligenza Artificiale",
+    "description": "Assistente di viaggio basato sulla posizione, alimentato da raccomandazioni tramite machine learning. Sviluppate funzionalità in tempo reale per mostrare spiagge, attrazioni, trasporti e meteo nelle vicinanze. Ho contribuito come sviluppatore principale in un ambiente startup dinamico."
   },
-  "social_media_dashboard": {
-    "title": "Dashboard Social Media",
-    "description": "Una dashboard responsiva che aggrega e visualizza metriche dei social media da più piattaforme."
+  "devflow": {
+    "title": "DevFlow – Piattaforma Sociale per Sviluppatori",
+    "description": "Una moderna piattaforma sociale per sviluppatori. Gli utenti possono pubblicare, salvare nei preferiti, mettere mi piace e condividere i post. Supporta l'accesso con GitHub e consente di seguire altri sviluppatori."
   },
-  "task_management_app": {
-    "title": "App di Gestione Attività",
-    "description": "Applicazione collaborativa di gestione attività con aggiornamenti in tempo reale e funzionalità di collaborazione di gruppo."
+  "persisto": {
+    "title": "Persisto – Gewohnheits-Tracker-App",
+    "description": "Eine App zur Verfolgung von Gewohnheiten, in der Nutzer eigene Gewohnheiten erstellen und teilen, anderen beitreten und durch Serien und Bestenlisten motiviert bleiben können."
   },
-  "weather_application": {
-    "title": "Applicazione Meteo",
-    "description": "Applicazione di previsioni meteo in tempo reale con rilevamento della posizione e mappe interattive."
-  },
-  "portfolio_website": {
-    "title": "Sito Portfolio",
+  "ahmedcodes": {
+    "title": "AhmedCodes - Sito Portfolio",
     "description": "Sito portfolio personale costruito con Gatsby e Tailwind CSS, con animazioni e design responsivo."
-  },
-  "finance_tracker": {
-    "title": "Tracker Finanziario",
-    "description": "Applicazione per il monitoraggio delle finanze personali con categorizzazione delle spese e visualizzazione."
   }
 }

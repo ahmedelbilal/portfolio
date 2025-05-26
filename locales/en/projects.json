@@ -1,26 +1,18 @@
 {
-  "ecommerce_platform": {
-    "title": "E-Commerce Platform",
-    "description": "A full-stack e-commerce application with payment integration, user authentication, and admin dashboard."
+  "lidolink": {
+    "title": "LidoLink – AI Travel Assistant",
+    "description": "A location-based travel assistant built with AI-powered recommendations. Developed real-time features to display nearby beaches, attractions, transport, and weather. Contributed as a core developer in a fast-paced startup environment."
   },
-  "social_media_dashboard": {
-    "title": "Social Media Dashboard",
-    "description": "A responsive dashboard that aggregates and visualizes social media metrics from multiple platforms."
+  "devflow": {
+    "title": "DevFlow – Social Platform for Developers",
+    "description": "A modern social platform for developers. Users can post, bookmark, like, and share content. GitHub login is supported, and users can follow each other to stay connected."
   },
-  "task_management_app": {
-    "title": "Task Management App",
-    "description": "Collaborative task management application with real-time updates and team collaboration features."
+  "persisto": {
+    "title": "Persisto – Habit Tracking App",
+    "description": "A habit tracking app where users can create and share habits, join others' habits, and stay motivated with streaks and leaderboards."
   },
-  "weather_application": {
-    "title": "Weather Application",
-    "description": "Real-time weather forecast application with location detection and interactive maps."
-  },
-  "portfolio_website": {
-    "title": "Portfolio Website",
+  "ahmedcodes": {
+    "title": "AhmedCodes - Portfolio Website",
     "description": "Personal portfolio website built with Gatsby and Tailwind CSS, featuring animations and responsive design."
-  },
-  "finance_tracker": {
-    "title": "Finance Tracker",
-    "description": "Personal finance tracking application with expense categorization and visualization."
   }
 }

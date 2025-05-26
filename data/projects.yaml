@@ -1,78 +1,35 @@
+- projectId: devflow
+  tags:
+    - Next.js
+    - TypeScript
+    - Tailwind
+    - Postgresql
+    - React
+  image: /images/devflow.png
+  demoUrl: https://devflow-opal.vercel.app/
+  githubUrl: https://github.com/ahmed-sudani/devflow
+
 - projectId: lidolink
   tags:
+    - Next.js
     - React
-    - Node.js
-    - MongoDB
-    - Stripe
+    - Tailwind
+    - TypeScript
   image: https://lidolink.com/images/og.png
   demoUrl: https://lidolink.com
   featured: false
 
-- projectId: portfolio_website
+- projectId: persisto
+  tags:
+    - Flutter
+    - Firebase
+  image: /images/persisto.png
+  demoUrl: https://ecommerce-demo.com
+
+- projectId: ahmedcodes
   tags:
     - Gatsby
     - Tailwind CSS
     - React
     - GraphQl
-  image: /og.png
-
-- projectId: persisto
-  tags:
-    - React
-    - Node.js
-    - MongoDB
-    - Stripe
-  image: /images/persisto.png
-  demoUrl: https://ecommerce-demo.com
-
-- projectId: ecommerce_platform
-  tags:
-    - React
-    - Node.js
-    - MongoDB
-    - Stripe
-  image: /api/placeholder/600/400
-  demoUrl: https://ecommerce-demo.com
-  githubUrl: https://github.com/ahmed/ecommerce
-
-- projectId: social_media_dashboard
-  tags:
-    - Next.js
-    - TypeScript
-    - Tailwind
-    - REST API
-  image: /api/placeholder/600/400
-  demoUrl: https://social-dashboard.com
-  githubUrl: https://github.com/ahmed/social-dashboard
-
-- projectId: task_management_app
-  tags:
-    - React
-    - Firebase
-    - Redux
-    - Material UI
-  image: /api/placeholder/600/400
-  demoUrl: https://task-manager-app.com
-  githubUrl: https://github.com/ahmed/task-manager
-  featured: false
-
-- projectId: weather_application
-  tags:
-    - React Native
-    - OpenWeatherMap API
-    - Geolocation
-  image: /api/placeholder/600/400
-  demoUrl: https://weather-app.com
-  githubUrl: https://github.com/ahmed/weather-app
-  featured: false
-
-- projectId: finance_tracker
-  tags:
-    - React
-    - Chart.js
-    - Firebase
-    - Tailwind
-  image: /api/placeholder/600/400
-  demoUrl: https://finance-tracker.com
-  githubUrl: https://github.com/ahmed/finance-tracker
-  featured: false
+  image: /images/ahmedcodes.png
