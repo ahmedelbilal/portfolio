@@ -31,16 +31,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             {/* Logo */}
             <div className="flex items-center">
               <Link to="/" className="flex items-center gap-2">
-                <img
-                  src="/images/logo.png"
-                  width={40}
-                  height={40}
-                  alt="ahmedcodes"
-                />
-                <span className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600 hidden sm:block">
-                  {/* {t("ahmed")} {t("codes")} */}
-                  ahmedcodes
+                <span className="bg-blue-500 w-8 h-8 text-white rounded-full inline-flex items-center justify-center text-xs font-bold">
+                  {"<a/>"}
                 </span>
+                <span className="font-bold text-xl text-blue-500">
+                  Ahmed Elbilal
+                </span>
+                <sup className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
               </Link>
             </div>
 

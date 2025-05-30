@@ -85,7 +85,7 @@ export const SEO: React.FC<PropsWithChildren<SeoProps>> = ({
         />
       ))}
 
-      <link rel="icon" type="image/svg+xml" href="/fav/favicon.ico" />
+      <link rel="icon" href="/images/ahmed.png" />
       {children}
     </>
   );

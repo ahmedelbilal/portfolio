@@ -24,12 +24,11 @@
     - Flutter
     - Firebase
   image: /images/persisto.png
-  demoUrl: https://ecommerce-demo.com
 
-- projectId: ahmedcodes
+- projectId: ahmedelbilal
   tags:
     - Gatsby
     - Tailwind CSS
     - React
     - GraphQl
-  image: /images/ahmedcodes.png
+  image: /images/logo.png
