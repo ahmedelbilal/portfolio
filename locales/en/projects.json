@@ -14,5 +14,9 @@
   "ahmedelbilal": {
     "title": "AhmedElbilal - Portfolio Website",
     "description": "Personal portfolio website built with Gatsby and Tailwind CSS, featuring animations and responsive design."
+  },
+  "kiki": {
+    "title": "KIKI – Grocery Shopping App",
+    "description": "KIKI is a smart mobile grocery shopping app that allows users to explore products based on their location, register using their phone number, and seamlessly manage their cart. With guest browsing, bilingual support, and a cost-efficient authentication system powered by Firebase, KIKI offers a smooth and user-friendly shopping experience."
   }
 }

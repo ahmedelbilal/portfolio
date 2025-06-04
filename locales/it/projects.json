@@ -14,5 +14,9 @@
   "ahmedelbilal": {
     "title": "AhmedElbilal - Sito Portfolio",
     "description": "Sito portfolio personale costruito con Gatsby e Tailwind CSS, con animazioni e design responsivo."
+  },
+  "kiki": {
+    "title": "KIKI – Einkaufs-App",
+    "description": "KIKI è un'app mobile intelligente per la spesa che consente agli utenti di esplorare i prodotti in base alla propria posizione, registrarsi con il numero di telefono e gestire facilmente il carrello. Con la navigazione come ospite, il supporto bilingue e un sistema di autenticazione efficiente basato su Firebase, KIKI offre un'esperienza di acquisto semplice e intuitiva."
   }
 }

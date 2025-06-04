@@ -9,6 +9,14 @@
   demoUrl: https://devflow-opal.vercel.app/
   githubUrl: https://github.com/ahmed-sudani/devflow
 
+- projectId: ahmedelbilal
+  tags:
+    - Gatsby
+    - Tailwind CSS
+    - React
+    - GraphQl
+  image: /images/logo.png
+
 - projectId: lidolink
   tags:
     - Next.js
@@ -23,12 +31,12 @@
   tags:
     - Flutter
     - Firebase
+    - Dart
   image: /images/persisto.png
 
-- projectId: ahmedelbilal
+- projectId: kiki
   tags:
-    - Gatsby
-    - Tailwind CSS
-    - React
-    - GraphQl
-  image: /images/logo.png
+    - Flutter
+    - Firebase
+    - Dart
+  image: /images/kiki.png
