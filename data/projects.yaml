@@ -26,17 +26,3 @@
   image: https://lidolink.com/images/og.png
   demoUrl: https://lidolink.com
   featured: false
-
-- projectId: persisto
-  tags:
-    - Flutter
-    - Firebase
-    - Dart
-  image: /images/persisto.png
-
-- projectId: kiki
-  tags:
-    - Flutter
-    - Firebase
-    - Dart
-  image: /images/kiki.png
