@@ -12,7 +12,6 @@ interface Project {
   image: string;
   demoUrl?: string;
   githubUrl?: string;
-  featured: boolean;
 }
 
 const ProjectsPage: React.FC<PageProps<Queries.ProjectsPageQuery>> = ({
@@ -36,16 +35,6 @@ const ProjectsPage: React.FC<PageProps<Queries.ProjectsPageQuery>> = ({
     [filter]
   );
 
-  const sortedProjects = React.useMemo(
-    () =>
-      [...filteredProjects].sort((a, b) => {
-        if (a.featured && !b.featured) return -1;
-        if (!a.featured && b.featured) return 1;
-        return 0;
-      }),
-    [filteredProjects]
-  );
-
   const renderProjectCard = (project: Project, index: number) => (
     <div
       key={project.projectId}
@@ -59,12 +48,6 @@ const ProjectsPage: React.FC<PageProps<Queries.ProjectsPageQuery>> = ({
           alt={t(`${project.projectId}.title`)}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
-
-        {project.featured && (
-          <div className="absolute top-4 left-4 px-3 py-1 bg-yellow-400 text-gray-900 text-xs font-semibold rounded-full">
-            Featured
-          </div>
-        )}
 
         <div className="absolute top-4 right-4 flex gap-2">
           {project.githubUrl && (
@@ -175,12 +158,12 @@ const ProjectsPage: React.FC<PageProps<Queries.ProjectsPageQuery>> = ({
 
       <section className="max-w-6xl mx-auto px-6 pb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {sortedProjects.map((project, index) =>
+          {filteredProjects.map((project, index) =>
             renderProjectCard(project, index)
           )}
         </div>
 
-        {sortedProjects.length === 0 && (
+        {filteredProjects.length === 0 && (
           <div className="text-center py-12" data-aos="fade-up">
             <div className="inline-flex justify-center items-center w-24 h-24 rounded-full bg-gray-100 dark:bg-gray-800 mb-4">
               <Code size={32} className="text-gray-400" />
@@ -275,7 +258,6 @@ export const query = graphql`
         image
         demoUrl
         githubUrl
-        featured
       }
     }
   }
