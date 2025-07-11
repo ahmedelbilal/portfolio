@@ -21,7 +21,6 @@ export const SEO: React.FC<PropsWithChildren<SeoProps>> = ({
   const {
     title: defaultTitle,
     description: defaultDescription, // get the raw key or fallback description here
-    image,
     siteUrl,
     twitterUsername,
   } = useSiteMetadata();
