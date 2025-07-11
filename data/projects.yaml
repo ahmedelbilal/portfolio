@@ -16,13 +16,3 @@
     - React
     - GraphQl
   image: /images/logo.png
-
-- projectId: lidolink
-  tags:
-    - Next.js
-    - React
-    - Tailwind
-    - TypeScript
-  image: https://lidolink.com/images/og.png
-  demoUrl: https://lidolink.com
-  featured: false
