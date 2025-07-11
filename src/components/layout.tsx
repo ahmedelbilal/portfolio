@@ -3,7 +3,6 @@ import { Menu, X } from "lucide-react";
 import React, { useState } from "react";
 import LanguageSwitcher from "./language-switcher";
 import ThemeToggle from "./theme-toggle";
-import { AOSInit } from "./aos";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -23,7 +22,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300 p-4 sm:p-10 font-sans"
       dir={isRTL ? "rtl" : "ltr"}
     >
-      <AOSInit />
       {/* Navigation */}
       <header className="sticky max-w-6xl mx-auto rounded-full top-0 z-50 bg-white dark:bg-gray-900 shadow">
         <div className="container mx-auto px-4">
