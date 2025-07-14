@@ -81,14 +81,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="md:hidden bg-white dark:bg-gray-900 shadow-lg">
             <div className="px-4 py-3 space-y-4">
               {["projects", "skills", "contact"].map((item) => (
-                <a
+                <Link
                   key={item}
-                  href={`#${item}`}
+                  to={`/${item}`}
                   className="block font-medium text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400 transition-colors py-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {t(item)}
-                </a>
+                </Link>
               ))}
               <div className="flex items-center justify-between py-2">
                 {/* Mobile Language Selector */}
