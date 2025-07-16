@@ -8,11 +8,3 @@
   image: /images/devflow.png
   demoUrl: https://devflow-opal.vercel.app/
   githubUrl: https://github.com/ahmed-sudani/devflow
-
-- projectId: ahmedelbilal
-  tags:
-    - Gatsby
-    - Tailwind
-    - React
-    - GraphQl
-  image: /images/logo.png

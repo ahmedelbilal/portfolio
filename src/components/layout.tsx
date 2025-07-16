@@ -45,7 +45,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <Link
                   key={item}
                   to={`/${item}`}
-                  className="font-medium text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
+                  className={`font-medium hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400 transition-colors ${
+                    location.pathname.includes(item)
+                      ? "text-blue-500"
+                      : "text-gray-600"
+                  }`}
                 >
                   {t(item)}
                 </Link>
@@ -84,7 +88,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <Link
                   key={item}
                   to={`/${item}`}
-                  className="block font-medium text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400 transition-colors py-2"
+                  className={`block font-medium hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400 transition-colors py-2 ${
+                    location.pathname.includes(item)
+                      ? "text-blue-500"
+                      : "text-gray-600"
+                  }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {t(item)}
