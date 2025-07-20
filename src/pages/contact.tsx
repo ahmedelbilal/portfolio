@@ -239,11 +239,7 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
           </div>
 
           {/* Contact Info */}
-          <div
-            className="md:col-span-2"
-            data-aos="fade-left"
-            data-aos-delay="500"
-          >
+          <div className="md:col-span-2">
             <div className="bg-white backdrop-blur-sm dark:bg-slate-800 rounded-3xl p-8 shadow-xl">
               <h2 className="text-2xl font-bold mb-6">
                 {t("connect_with_me")}
