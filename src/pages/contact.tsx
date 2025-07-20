@@ -112,24 +112,6 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
 
   return (
     <Layout>
-      {/* Header */}
-      <header className="max-w-6xl mx-auto px-6 py-16 text-center">
-        <h1
-          className="text-4xl md:text-5xl font-bold mb-4"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          {t("get_in_touch")}
-        </h1>
-        <p
-          className="max-w-2xl mx-auto text-lg opacity-90"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          {t("have_a_project")}
-        </p>
-      </header>
-
       {/* Section */}
       <section className="max-w-6xl mx-auto px-6 pb-20">
         <div className="grid md:grid-cols-5 gap-10">
