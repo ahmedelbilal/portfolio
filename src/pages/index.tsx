@@ -51,11 +51,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
             {t("bio")}
           </p>
 
-          <div
-            data-aos="fade-up"
-            data-aos-delay="800"
-            className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start"
-          >
+          <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
             <Link
               to="/contact"
               className="flex items-center gap-2 rounded-lg font-medium hover:scale-105 hover:-rotate-1"
