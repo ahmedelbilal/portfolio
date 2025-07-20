@@ -1,4 +1,4 @@
-import { graphql, HeadProps, type HeadFC, type PageProps } from "gatsby";
+import { graphql, type HeadFC, type PageProps } from "gatsby";
 import { Link, useTranslation } from "gatsby-plugin-react-i18next";
 import {
   ArrowRight,
