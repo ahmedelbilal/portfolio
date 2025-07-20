@@ -159,7 +159,7 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
                       id="email"
                       name="email"
                       required
-                      className="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 border dark:border-none border-transparent focus:border-blue-500 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 border dark:border-none border-transparent focus:border-blue-500 focus:outline-none"
                       disabled={formStatus === "loading"}
                     />
                   </div>
@@ -177,7 +177,7 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
                     id="subject"
                     name="subject"
                     required
-                    className="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 border dark:border-none border-transparent focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 border dark:border-none border-transparent focus:border-blue-500 focus:outline-none"
                     disabled={formStatus === "loading"}
                   />
                 </div>
@@ -194,7 +194,7 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
                     name="message"
                     rows={5}
                     required
-                    className="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 border dark:border-none border-transparent focus:border-blue-500 focus:outline-none transition-colors resize-none"
+                    className="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 border dark:border-none border-transparent focus:border-blue-500 focus:outline-none resize-none"
                     disabled={formStatus === "loading"}
                   ></textarea>
                 </div>
@@ -202,7 +202,7 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
                 <button
                   type="submit"
                   disabled={formStatus === "loading"}
-                  className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg font-medium transition-all duration-300 hover:bg-blue-700 flex items-center justify-center gap-2 hover:scale-102 disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 flex items-center justify-center gap-2 hover:scale-102 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {formStatus === "loading" ? (
                     <>
