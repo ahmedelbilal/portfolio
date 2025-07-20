@@ -87,7 +87,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <Link
                   key={item}
                   to={`/${item}`}
-                  className={`block font-medium py-2 px-4 rounded-full hover:text-white hover:bg-blue-500 transition-colors ${
+                  className={`block font-medium py-2 px-4 rounded-full hover:text-white hover:bg-blue-500 ${
                     pathName.includes(item) && "bg-blue-500 text-white"
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
