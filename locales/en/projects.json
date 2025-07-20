@@ -1,22 +1,10 @@
 {
-  "lidolink": {
-    "title": "LidoLink – AI Travel Assistant",
-    "description": "A location-based travel assistant built with AI-powered recommendations. Developed real-time features to display nearby beaches, attractions, transport, and weather. Contributed as a core developer in a fast-paced startup environment."
-  },
   "devflow": {
-    "title": "DevFlow – Social Platform for Developers",
+    "title": "Social Platform for Developers",
     "description": "A modern social platform for developers. Users can post, bookmark, like, and share content. GitHub login is supported, and users can follow each other to stay connected."
   },
-  "persisto": {
-    "title": "Persisto – Habit Tracking App",
-    "description": "A habit tracking app where users can create and share habits, join others' habits, and stay motivated with streaks and leaderboards."
-  },
-  "ahmedelbilal": {
-    "title": "AhmedElbilal - Portfolio Website",
-    "description": "Personal portfolio website built with Gatsby and Tailwind CSS, featuring animations and responsive design."
-  },
-  "kiki": {
-    "title": "KIKI – Grocery Shopping App",
-    "description": "KIKI is a smart mobile grocery shopping app that allows users to explore products based on their location, register using their phone number, and seamlessly manage their cart. With guest browsing, bilingual support, and a cost-efficient authentication system powered by Firebase, KIKI offers a smooth and user-friendly shopping experience."
+  "shiporbit": {
+    "title": "Shipping Platform Connecting Carriers and Shippers",
+    "description": "ShipOrbit is a modern shipping platform that connects carriers with shippers. Shippers can post shipping requests, and carriers can offer their services."
   }
 }

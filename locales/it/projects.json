@@ -1,22 +1,10 @@
 {
-  "lidolink": {
-    "title": "LidoLink – Assistente di Viaggio con Intelligenza Artificiale",
-    "description": "Assistente di viaggio basato sulla posizione, alimentato da raccomandazioni tramite machine learning. Sviluppate funzionalità in tempo reale per mostrare spiagge, attrazioni, trasporti e meteo nelle vicinanze. Ho contribuito come sviluppatore principale in un ambiente startup dinamico."
-  },
   "devflow": {
-    "title": "DevFlow – Piattaforma Sociale per Sviluppatori",
+    "title": "Piattaforma Sociale per Sviluppatori",
     "description": "Una moderna piattaforma sociale per sviluppatori. Gli utenti possono pubblicare, salvare nei preferiti, mettere mi piace e condividere i post. Supporta l'accesso con GitHub e consente di seguire altri sviluppatori."
   },
-  "persisto": {
-    "title": "Persisto – Gewohnheits-Tracker-App",
-    "description": "Eine App zur Verfolgung von Gewohnheiten, in der Nutzer eigene Gewohnheiten erstellen und teilen, anderen beitreten und durch Serien und Bestenlisten motiviert bleiben können."
-  },
-  "ahmedelbilal": {
-    "title": "AhmedElbilal - Sito Portfolio",
-    "description": "Sito portfolio personale costruito con Gatsby e Tailwind CSS, con animazioni e design responsivo."
-  },
-  "kiki": {
-    "title": "KIKI – Einkaufs-App",
-    "description": "KIKI è un'app mobile intelligente per la spesa che consente agli utenti di esplorare i prodotti in base alla propria posizione, registrarsi con il numero di telefono e gestire facilmente il carrello. Con la navigazione come ospite, il supporto bilingue e un sistema di autenticazione efficiente basato su Firebase, KIKI offre un'esperienza di acquisto semplice e intuitiva."
+  "shiporbit": {
+    "title": "Piattaforma di spedizione che collega trasportatori e mittenti",
+    "description": "ShipOrbit è una piattaforma di spedizione moderna che collega trasportatori e mittenti. I mittenti possono pubblicare richieste di spedizione e i trasportatori possono offrire i loro servizi."
   }
 }
