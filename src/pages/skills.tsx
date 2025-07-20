@@ -1,9 +1,9 @@
-import { graphql, HeadProps, type HeadFC, type PageProps } from "gatsby";
+import { graphql, type HeadFC, type PageProps } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 import Layout from "../components/layout";
-import getIcon from "../utils/get-icon";
 import { SEO } from "../components/seo";
+import getIcon from "../utils/get-icon";
 
 // Define the skill interface
 interface Skill {
@@ -20,116 +20,50 @@ interface SkillCategory {
 }
 
 const SkillsPage: React.FC<PageProps<Queries.SkillsPageQuery>> = ({ data }) => {
-  const [selectedCategory, setSelectedCategory] = React.useState<string | null>(
-    null
-  );
   const { t } = useTranslation();
 
   const skillCategories = data.allSkillsYaml.nodes as SkillCategory[];
-
-  // Select the first category by default
-  React.useEffect(() => {
-    if (skillCategories.length > 0) {
-      setSelectedCategory(skillCategories[0].name);
-    }
-  }, []);
-
-  const currentCategory = React.useMemo(
-    () => skillCategories.find((cat) => cat.name === selectedCategory),
-    [selectedCategory]
-  );
 
   // Render skill card
   const renderSkillCard = (skill: Skill, index: number) => {
     return (
       <div
         key={skill.name}
-        data-aos="fade-up"
-        data-aos-delay={index * 100}
-        className="bg-white dark:bg-slate-800 group rounded-3xl shadow-xl backdrop-blur-sm p-4 flex flex-col items-center transition-all duration-500 hover:-translate-y-1"
+        className="bg-white dark:bg-slate-800 group rounded-3xl backdrop-blur-sm p-4 flex flex-col items-center hover:-translate-y-1"
       >
-        <div className="w-16 h-16 mb-3 flex items-center justify-center">
+        <div className="w-16 h-16 mb-3 flex items-center justify-center -mt-10">
           <img
             src={skill.logo}
             alt={skill.name}
-            className="max-w-full max-h-full transition-transform duration-500 group-hover:scale-110"
+            className="max-w-full max-h-full transition-transform group-hover:scale-110"
           />
         </div>
-        <h3 className="font-medium text-lg">{skill.name}</h3>
+
+        <h3 className="font-medium">{skill.name}</h3>
       </div>
     );
   };
 
   return (
     <Layout>
-      {/* Page Header */}
-      <header className="max-w-6xl mx-auto px-6 py-16 text-center">
-        <h1
-          data-aos="fade-up"
-          data-aos-delay="300"
-          className="text-4xl md:text-5xl font-bold mb-4"
-        >
-          {t("skills_title")}
-        </h1>
-        <p
-          data-aos="fade-up"
-          data-aos-delay="400"
-          className="max-w-2xl mx-auto text-lg opacity-90"
-        >
-          {t("skills_description")}
-        </p>
-      </header>
-
-      {/* Skill Categories */}
-      <section className="max-w-6xl mx-auto px-6 mb-12">
-        <div
-          data-aos="fade-up"
-          data-aos-delay="500"
-          className="flex flex-wrap gap-4 justify-center"
-        >
-          {skillCategories.map((category) => {
-            const CategoryIcon = getIcon(category.icon);
-
-            return (
-              <button
-                key={category.name}
-                onClick={() => setSelectedCategory(category.name)}
-                className={`flex items-center gap-2 px-5 py-3 rounded-lg transition-all duration-300 hover:scale-105 ${
-                  selectedCategory === category.name
-                    ? `bg-gradient-to-r ${category.color} text-white`
-                    : "dark:bg-gray-800 dark:hover:bg-gray-700 bg-white/10 hover:bg-white/20"
-                }`}
-              >
-                <CategoryIcon />
-                {t(category.name)}
-              </button>
-            );
-          })}
-        </div>
-      </section>
-
       {/* Skills Grid */}
-      <section className="max-w-6xl mx-auto px-6 pb-20">
-        {currentCategory && (
+      <section className="max-w-6xl mx-auto px-6 pb-20 space-y-12 mt-10">
+        {skillCategories.map((currentCategory) => (
           <div>
-            <h2
-              data-aos="fade-right"
-              data-aos-delay="600"
-              className="text-2xl font-bold mb-8 flex items-center gap-3"
-            >
+            <h2 className="text-2xl font-bold mb-10 flex items-center gap-3">
               {currentCategory.icon &&
                 (() => {
                   const Icon = getIcon(currentCategory.icon);
-                  return <Icon size={24} />;
+                  return <Icon className="text-blue-500" size={24} />;
                 })()}
               {t(currentCategory.name)} {t("technologies")}
             </h2>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6">
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-6 gap-y-10">
               {currentCategory.skills.map(renderSkillCard)}
             </div>
           </div>
-        )}
+        ))}
       </section>
     </Layout>
   );
