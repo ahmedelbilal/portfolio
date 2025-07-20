@@ -1,10 +1,10 @@
-import { graphql, HeadProps, type HeadFC, type PageProps } from "gatsby";
+import { graphql, type HeadFC, type PageProps } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { CheckCircle, Clock, Send, X } from "lucide-react";
 import * as React from "react";
 import Layout from "../components/layout";
-import getIcon from "../utils/get-icon";
 import { SEO } from "../components/seo";
+import getIcon from "../utils/get-icon";
 
 const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
   data,
