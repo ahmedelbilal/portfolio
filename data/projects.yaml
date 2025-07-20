@@ -6,16 +6,5 @@
     - Postgresql
     - React
   image: /images/devflow.png
-  demoUrl: https://devflow-opal.vercel.app/
+  demoUrl: https://devflow.ahmedelbilal.com
   githubUrl: https://github.com/ahmed-sudani/devflow
-
-- projectId: shiporbit
-  tags:
-    - Python
-    - Django
-    - Postgresql
-    - React
-    - Tailwind
-  image: /images/shiporbit.png
-  demoUrl: https://shiporbit.ahmedelbilal.com
-  githubUrl: https://github.com/ShipOrbit
