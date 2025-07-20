@@ -113,7 +113,7 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
   return (
     <Layout>
       {/* Section */}
-      <section className="max-w-6xl mx-auto px-6 pb-20">
+      <section className="max-w-6xl mx-auto px-6 pb-20 mt-10">
         <div className="grid md:grid-cols-5 gap-10">
           {/* Contact Form */}
           <div className="md:col-span-3">
