@@ -3,12 +3,14 @@ import { Menu, X } from "lucide-react";
 import React, { useState } from "react";
 import LanguageSwitcher from "./language-switcher";
 import ThemeToggle from "./theme-toggle";
+import usePathName from "../hooks/use-path-name";
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
+  const pathName = usePathName();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
@@ -48,8 +50,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     key={item}
                     to={`/${item}`}
                     className={`font-medium py-2 px-4 rounded-3xl hover:text-white hover:bg-blue-500 transition-colors ${
-                      location.pathname.includes(item) &&
-                      "bg-blue-500 text-white"
+                      pathName.includes(item) && "bg-blue-500 text-white"
                     }`}
                   >
                     {t(item)}
@@ -87,7 +88,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   key={item}
                   to={`/${item}`}
                   className={`block font-medium py-2 px-4 rounded-full hover:text-white hover:bg-blue-500 transition-colors ${
-                    location.pathname.includes(item) && "bg-blue-500 text-white"
+                    pathName.includes(item) && "bg-blue-500 text-white"
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
