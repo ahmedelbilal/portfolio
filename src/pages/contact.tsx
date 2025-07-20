@@ -116,11 +116,7 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
       <section className="max-w-6xl mx-auto px-6 pb-20">
         <div className="grid md:grid-cols-5 gap-10">
           {/* Contact Form */}
-          <div
-            className="md:col-span-3"
-            data-aos="fade-right"
-            data-aos-delay="400"
-          >
+          <div className="md:col-span-3">
             <div className="bg-white backdrop-blur-sm dark:bg-slate-800 rounded-3xl p-8 shadow-xl">
               <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
                 <Send size={20} className="text-blue-500" />
