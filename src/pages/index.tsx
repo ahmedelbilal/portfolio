@@ -32,11 +32,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
       <section className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto gap-10 px-6 py-20">
         {/* Text */}
         <div className="text-center md:text-start max-w-xl">
-          <h1
-            data-aos="fade-right"
-            data-aos-delay="400"
-            className="text-5xl md:text-6xl font-extrabold leading-tight"
-          >
+          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
             {t("greeting")}
             <span className="inline-block animate-wave origin-bottom-right">
               👋
