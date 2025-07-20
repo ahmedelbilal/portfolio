@@ -39,13 +39,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
             </span>
           </h1>
 
-          <p
-            data-aos="fade-right"
-            data-aos-delay="600"
-            className="mt-4 text-lg md:text-xl opacity-90"
-          >
-            {t("bio")}
-          </p>
+          <p className="mt-4 text-lg md:text-xl opacity-90">{t("bio")}</p>
 
           <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
             <Link
