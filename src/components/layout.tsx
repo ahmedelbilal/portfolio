@@ -21,7 +21,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <div
-      className="min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300 p-4 sm:p-10 font-sans"
+      className="min-h-screen bg-[#FAFAFA] text-gray-900 dark:bg-gray-900 dark:text-white p-4 sm:p-10 font-sans"
       dir={isRTL ? "rtl" : "ltr"}
     >
       {/* Navigation */}
