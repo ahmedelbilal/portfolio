@@ -143,7 +143,7 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
                       id="name"
                       name="name"
                       required
-                      className="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 border dark:border-none border-transparent focus:border-blue-500 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 border dark:border-none border-transparent focus:border-blue-500 focus:outline-none"
                       disabled={formStatus === "loading"}
                     />
                   </div>
