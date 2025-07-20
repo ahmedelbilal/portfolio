@@ -254,7 +254,7 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
                       href={social.link || "#"}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                      className="flex items-center gap-3 px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600"
                       aria-label={social.name || ""}
                     >
                       <Icon />
