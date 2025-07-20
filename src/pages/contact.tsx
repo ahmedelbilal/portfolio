@@ -101,7 +101,7 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
         {formStatus !== "loading" && (
           <button
             onClick={() => setFormStatus("idle")}
-            className="ml-auto p-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors"
+            className="ml-auto p-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full"
           >
             <X size={16} />
           </button>
