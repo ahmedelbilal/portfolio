@@ -19,14 +19,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <div
-      className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300 p-4 sm:p-10 font-sans"
+      className="min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300 p-4 sm:p-10 font-sans"
       dir={isRTL ? "rtl" : "ltr"}
     >
       {/* Navigation */}
-      <header className="sticky max-w-6xl mx-auto rounded-full top-0 z-50 bg-white dark:bg-gray-900 shadow">
+      <header className="sticky max-w-6xl mx-auto rounded-3xl shadow-xl top-0 z-50 bg-white dark:bg-slate-800">
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between py-4">
-            {/* Logo */}
+            {/* Logo (stays on the left) */}
             <div className="flex items-center">
               <Link to="/" className="flex items-center gap-2">
                 <span className="bg-blue-500 w-8 h-8 text-white rounded-full inline-flex items-center justify-center text-xs font-bold">
@@ -39,39 +39,37 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               </Link>
             </div>
 
-            {/* Desktop Menu */}
-            <div className="hidden md:flex items-center gap-8">
-              {["projects", "skills", "contact"].map((item) => (
-                <Link
-                  key={item}
-                  to={`/${item}`}
-                  className={`font-medium hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400 transition-colors ${
-                    location.pathname.includes(item)
-                      ? "text-blue-500"
-                      : "text-gray-600"
-                  }`}
-                >
-                  {t(item)}
-                </Link>
-              ))}
-            </div>
+            {/* Everything else: Menu + Controls */}
+            <div className="flex items-center gap-8">
+              {/* Desktop Menu */}
+              <div className="hidden lg:flex items-center gap-8">
+                {["projects", "skills", "contact"].map((item) => (
+                  <Link
+                    key={item}
+                    to={`/${item}`}
+                    className={`font-medium py-2 px-4 rounded-3xl hover:text-white hover:bg-blue-500 transition-colors ${
+                      location.pathname.includes(item) &&
+                      "bg-blue-500 text-white"
+                    }`}
+                  >
+                    {t(item)}
+                  </Link>
+                ))}
+              </div>
 
-            {/* Right Controls: Language Select + Theme Toggle */}
-            <div className="flex items-center gap-4">
+              {/* Theme Toggle */}
+              <div className="hidden md:block">
+                <ThemeToggle />
+              </div>
+
               {/* Language Selector */}
               <div className="hidden md:block">
                 <LanguageSwitcher />
               </div>
 
-              {/* Theme Toggle */}
-              <div className="hidden md:block">
-                {/* Your theme toggle component */}
-                <ThemeToggle />
-              </div>
-
               {/* Mobile Menu Button */}
               <button
-                className="md:hidden text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                className="lg:hidden text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                 onClick={toggleMobileMenu}
               >
                 {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -82,16 +80,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-white dark:bg-gray-900 shadow-lg">
+          <div className="md:hidden bg-white dark:bg-slate-800 shadow-xl rounded-3xl">
             <div className="px-4 py-3 space-y-4">
               {["projects", "skills", "contact"].map((item) => (
                 <Link
                   key={item}
                   to={`/${item}`}
-                  className={`block font-medium hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400 transition-colors py-2 ${
-                    location.pathname.includes(item)
-                      ? "text-blue-500"
-                      : "text-gray-600"
+                  className={`block font-medium py-2 px-4 rounded-full hover:text-white hover:bg-blue-500 transition-colors ${
+                    location.pathname.includes(item) && "bg-blue-500 text-white"
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >

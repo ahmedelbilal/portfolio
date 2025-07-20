@@ -46,7 +46,7 @@ const SkillsPage: React.FC<PageProps<Queries.SkillsPageQuery>> = ({ data }) => {
         key={skill.name}
         data-aos="fade-up"
         data-aos-delay={index * 100}
-        className="group rounded-xl shadow-lg hover:shadow-xl backdrop-blur-sm p-4 flex flex-col items-center transition-all duration-500 hover:scale-105 hover:-translate-y-1 dark:bg-gray-800/50"
+        className="bg-white dark:bg-slate-800 group rounded-3xl shadow-xl backdrop-blur-sm p-4 flex flex-col items-center transition-all duration-500 hover:-translate-y-1"
       >
         <div className="w-16 h-16 mb-3 flex items-center justify-center">
           <img
@@ -125,7 +125,7 @@ const SkillsPage: React.FC<PageProps<Queries.SkillsPageQuery>> = ({ data }) => {
               {t(currentCategory.name)} {t("technologies")}
             </h2>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6">
               {currentCategory.skills.map(renderSkillCard)}
             </div>
           </div>

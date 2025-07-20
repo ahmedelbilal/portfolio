@@ -40,13 +40,13 @@ const ProjectsPage: React.FC<PageProps<Queries.ProjectsPageQuery>> = ({
       key={project.projectId}
       data-aos="fade-up"
       data-aos-delay={index * 100 + 300}
-      className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-700 hover:shadow-xl"
+      className="bg-white dark:bg-slate-800 relative overflow-hidden rounded-3xl transition-all duration-700 shadow-xl"
     >
       <div className="relative overflow-hidden h-60">
         <img
           src={project.image}
           alt={t(`${project.projectId}.title`)}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className="w-full h-full object-cover transition-transform duration-500 border-b dark:border-none"
         />
 
         <div className="absolute top-4 right-4 flex gap-2">
@@ -55,7 +55,7 @@ const ProjectsPage: React.FC<PageProps<Queries.ProjectsPageQuery>> = ({
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/40 transition-all duration-300 transform hover:scale-110"
+              className="p-2 rounded-full bg-black backdrop-blur-sm transition-all duration-300 transform hover:scale-110"
             >
               <Github size={18} className="text-white" />
             </a>
@@ -65,7 +65,7 @@ const ProjectsPage: React.FC<PageProps<Queries.ProjectsPageQuery>> = ({
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/40 transition-all duration-300 transform hover:scale-110"
+              className="p-2 rounded-full bg-black backdrop-blur-sm transition-all duration-300 transform hover:scale-110"
             >
               <ExternalLink size={18} className="text-white" />
             </a>
@@ -181,28 +181,6 @@ const ProjectsPage: React.FC<PageProps<Queries.ProjectsPageQuery>> = ({
             </button>
           </div>
         )}
-      </section>
-
-      <section className="max-w-6xl mx-auto px-6 pb-20">
-        <div
-          data-aos="fade-up"
-          data-aos-delay="600"
-          className="text-center p-8 rounded-xl bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm"
-        >
-          <h2 className="text-2xl font-bold mb-3">
-            {t("interested_in_working")}
-          </h2>
-          <p className="mb-6 opacity-90 max-w-2xl mx-auto">
-            {t("open_to_discussion")}
-          </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium transition-all duration-300 hover:bg-blue-700 hover:scale-105"
-          >
-            <Globe size={18} />
-            {t("get_in_touch")}
-          </Link>
-        </div>
       </section>
     </Layout>
   );

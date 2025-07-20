@@ -139,7 +139,7 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
             data-aos="fade-right"
             data-aos-delay="400"
           >
-            <div className="bg-white/5 backdrop-blur-sm dark:bg-gray-800/50 rounded-xl p-8 shadow-lg border dark:border-none border-gray-200 dark:border-gray-700">
+            <div className="bg-white backdrop-blur-sm dark:bg-slate-800 rounded-3xl p-8 shadow-xl">
               <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
                 <Send size={20} className="text-blue-500" />
                 {t("send_me_message")}
@@ -244,7 +244,7 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
             data-aos="fade-left"
             data-aos-delay="500"
           >
-            <div className="bg-white/5 backdrop-blur-sm dark:bg-gray-800/50 rounded-xl p-8 shadow-lg border dark:border-none border-gray-200 dark:border-gray-700">
+            <div className="bg-white backdrop-blur-sm dark:bg-slate-800 rounded-3xl p-8 shadow-xl">
               <h2 className="text-2xl font-bold mb-6">
                 {t("connect_with_me")}
               </h2>
