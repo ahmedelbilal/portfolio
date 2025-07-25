@@ -12,7 +12,11 @@ const LanguageSwitcher: React.FC = () => {
         className="bg-transparent cursor-pointer font-medium focus:outline-none"
       >
         {languages.map((lang) => (
-          <option key={lang} value={lang}>
+          <option
+            key={lang}
+            value={lang}
+            className="bg-white dark:bg-slate-800"
+          >
             {lang.toUpperCase()}
           </option>
         ))}
