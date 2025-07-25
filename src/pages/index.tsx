@@ -56,7 +56,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
         <div className="relative">
           <div className="flex flex-col gap-4 justify-center items-center text-center rounded-3xl bg-white dark:bg-slate-800 p-8 shadow-xl">
             <img
-              src="https://media.licdn.com/dms/image/v2/D4E03AQHrHZ-MYC3nSw/profile-displayphoto-shrink_800_800/B4EZSs3cC9HMAc-/0/1738067004243?e=1753315200&v=beta&t=s6RzTb3AO0ywo2I-ecAE4moQQWoE4BQ4Kbvs1bcWtE0"
+              src="/images/ahmed.png"
               alt="Ahmed"
               width="256px"
               height="256px"
