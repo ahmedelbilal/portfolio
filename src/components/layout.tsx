@@ -49,11 +49,19 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   <Link
                     key={item}
                     to={`/${item}`}
-                    className={`font-medium py-2 px-4 rounded-3xl hover:text-white hover:bg-blue-500 ${
-                      pathName.includes(item) && "bg-blue-500 text-white"
-                    }`}
+                    className={`group relative font-medium py-2 px-4 rounded-3xl overflow-hidden z-10
+                    ${
+                      pathName.includes(item)
+                        ? "bg-blue-500 text-white"
+                        : "text-gray-900 dark:text-white"
+                    }
+                    hover:text-white
+                    before:content-[''] before:absolute before:inset-0 before:bg-blue-500 
+                    before:scale-x-0 before:origin-left before:transition-transform before:duration-500 
+                    hover:before:scale-x-100
+                  `}
                   >
-                    {t(item)}
+                    <span className="relative z-10">{t(item)}</span>
                   </Link>
                 ))}
               </div>
