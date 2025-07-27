@@ -16,6 +16,7 @@
     - Postgresql
     - React
     - Tailwind
+    - Docker
   image: /images/shiporbit.png
   demoUrl: https://shiporbit.ahmedelbilal.com
   githubUrl: https://github.com/ShipOrbit
