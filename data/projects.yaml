@@ -2,9 +2,9 @@
   tags:
     - Next.js
     - TypeScript
-    - Tailwind
     - Postgresql
     - React
+    - Tailwind
   image: /images/devflow.png
   demoUrl: https://devflow.ahmedelbilal.com
   githubUrl: https://github.com/ahmed-sudani/devflow
