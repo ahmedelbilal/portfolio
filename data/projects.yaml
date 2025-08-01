@@ -3,6 +3,7 @@
     - Python
     - Django
     - Postgresql
+    - Stripe
     - React
     - Tailwind
     - Docker
