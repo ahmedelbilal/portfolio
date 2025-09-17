@@ -16,16 +16,21 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "gatsby": "^5.14.3",
     "gatsby-plugin-react-i18next": "^3.0.1",
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-source-filesystem": "^5.14.0",
     "gatsby-transformer-yaml": "^5.14.0",
+    "gsap": "^3.13.0",
     "i18next": "^25.2.0",
     "lucide-react": "^0.511.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-i18next": "^15.5.1"
+    "react-i18next": "^15.5.1",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20.17.50",

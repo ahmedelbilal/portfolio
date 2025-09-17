@@ -4,6 +4,8 @@ import React from "react";
 import LanguageSwitcher from "./language-switcher";
 import ThemeToggle from "./theme-toggle";
 import usePathName from "../hooks/use-path-name";
+import TargetCursor from "./TargetCursor";
+import { cn } from "@/lib/utils";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -24,7 +26,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between py-4">
             {/* Logo */}
-            <div className="flex items-center">
+            <div className="flex items-center cursor-target">
               <Link to="/" className="flex items-center gap-2">
                 <span className="bg-blue-500 w-8 h-8 text-white rounded-full inline-flex items-center justify-center text-xs font-bold">
                   {"<a/>"}
@@ -44,17 +46,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   <Link
                     key={item}
                     to={`/${item}`}
-                    className={`group relative font-medium py-2 px-4 rounded-3xl overflow-hidden z-10
-                    ${
+                    className={cn(
+                      "cursor-target font-medium py-2 px-4 rounded-3xl overflow-hidden z-10",
                       pathName.includes(item)
                         ? "bg-blue-500 text-white"
                         : "text-gray-900 dark:text-white"
-                    }
-                    hover:text-white
-                    before:content-[''] before:absolute before:inset-0 before:bg-blue-500 
-                    before:scale-x-0 before:origin-left before:transition-transform before:duration-500 
-                    hover:before:scale-x-100
-                  `}
+                    )}
                   >
                     <span className="relative z-10">{t(item)}</span>
                   </Link>
@@ -141,6 +138,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </div>
       </header>
 
+      <TargetCursor spinDuration={2} hideDefaultCursor={true} />
       {/* Main Content */}
       <main className="flex-grow">{children}</main>
     </div>

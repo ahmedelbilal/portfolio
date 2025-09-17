@@ -32,7 +32,10 @@ export default function ThemeToggle() {
     theme === "light" ? <Sun size={20} /> : <Moon size={20} />;
 
   return (
-    <button onClick={toggleTheme} className="flex items-center gap-2">
+    <button
+      onClick={toggleTheme}
+      className="flex items-center gap-2 cursor-target"
+    >
       {getIcon()}
     </button>
   );
