@@ -17,6 +17,9 @@ importers:
       gatsby:
         specifier: ^5.14.3
         version: 5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3)
+      gatsby-plugin-nprogress:
+        specifier: ^5.15.0
+        version: 5.15.0(gatsby@5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))
       gatsby-plugin-react-i18next:
         specifier: ^3.0.1
         version: 3.0.1(gatsby@5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(i18next@25.2.0(typescript@5.8.3))(react-i18next@15.5.1(i18next@25.2.0(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3))(react@18.3.1)
@@ -1544,6 +1547,9 @@ packages:
     resolution: {integrity: sha512-PYAthTa2m2VKxuvSD3DPC/Gy+U+sOA1LAuT8mkmRuvw+NACSaeXEQ+NHcVF7rONl6qcaxV3Uuemwawk+7+SJLw==}
     engines: {node: '>= 0.6'}
 
+  accessible-nprogress@2.1.2:
+    resolution: {integrity: sha512-reIwMbbt+ZGOmQLWPXGcPf5X1F4fzsZAekY9alCxpekxizRhQMAd/QInaA8k7WtwTcGMzD9hnYswGLcaJDRY/A==}
+
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -3061,6 +3067,12 @@ packages:
     engines: {parcel: 2.x}
     peerDependencies:
       '@parcel/core': ^2.0.0
+
+  gatsby-plugin-nprogress@5.15.0:
+    resolution: {integrity: sha512-BmVKQ6zytOpgBGUhtKxCEozO5HQPB6rB+yG0lIBOhpl5XWwnBdzGLLpFYGavZFblZOh4j63eIMKJvx5KER36ag==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      gatsby: ^5.0.0-next
 
   gatsby-plugin-page-creator@5.14.0:
     resolution: {integrity: sha512-H7Yk6Z+kRgOKlco6gFyj9tay+V9eeufZce+NSH6tqHq7pQ56+/X46y4XdeBsrr6wnRs0dBy+Z9rmJTD5w78c2w==}
@@ -7756,6 +7768,8 @@ snapshots:
       mime-types: 2.1.35
       negotiator: 0.6.3
 
+  accessible-nprogress@2.1.2: {}
+
   acorn-jsx@5.3.2(acorn@7.4.1):
     dependencies:
       acorn: 7.4.1
@@ -9703,6 +9717,12 @@ snapshots:
       '@parcel/runtime-js': 2.8.3(@parcel/core@2.8.3)
       '@parcel/transformer-js': 2.8.3(@parcel/core@2.8.3)
       '@parcel/transformer-json': 2.8.3(@parcel/core@2.8.3)
+
+  gatsby-plugin-nprogress@5.15.0(gatsby@5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3)):
+    dependencies:
+      '@babel/runtime': 7.27.1
+      accessible-nprogress: 2.1.2
+      gatsby: 5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3)
 
   gatsby-plugin-page-creator@5.14.0(gatsby@5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(graphql@16.11.0):
     dependencies:
