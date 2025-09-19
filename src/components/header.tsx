@@ -7,7 +7,7 @@ import LanguageSwitcher from "./language-switcher";
 import ThemeToggle from "./theme-toggle";
 
 export default function Header() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const pathName = usePathName();
 
   return (
