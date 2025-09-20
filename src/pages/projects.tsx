@@ -38,7 +38,7 @@ const ProjectsPage: React.FC<PageProps<Queries.ProjectsPageQuery>> = ({
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-black backdrop-blur-sm transform hover:scale-110"
+              className="p-2 rounded-full cursor-target bg-black backdrop-blur-sm transform hover:scale-110"
             >
               <Github size={18} className="text-white" />
             </a>
@@ -48,7 +48,7 @@ const ProjectsPage: React.FC<PageProps<Queries.ProjectsPageQuery>> = ({
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-black backdrop-blur-sm transform hover:scale-110"
+              className="p-2 rounded-full cursor-target bg-black backdrop-blur-sm transform hover:scale-110"
             >
               <ExternalLink size={18} className="text-white" />
             </a>

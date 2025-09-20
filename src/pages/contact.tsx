@@ -198,7 +198,7 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
                 <button
                   type="submit"
                   disabled={formStatus === "loading"}
-                  className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 flex items-center justify-center gap-2 hover:scale-102 disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="w-full px-6 py-3 cursor-target bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 flex items-center justify-center gap-2 hover:scale-102 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {formStatus === "loading" ? (
                     <>
@@ -232,7 +232,7 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
                       href={social.link || "#"}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex w-full items-center justify-center gap-3 px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600"
+                      className="flex w-full items-center justify-center cursor-target gap-3 px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600"
                       aria-label={social.name || ""}
                     >
                       <Icon />
