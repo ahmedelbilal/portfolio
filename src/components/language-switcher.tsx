@@ -15,7 +15,7 @@ const LanguageSwitcher: React.FC = () => {
           <option
             key={lang}
             value={lang}
-            className="bg-white dark:bg-slate-800"
+            className="bg-white dark:bg-slate-800 cursor-target"
           >
             {lang.toUpperCase()}
           </option>
