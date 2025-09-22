@@ -1,30 +1,13 @@
 import { graphql, type HeadFC, type PageProps } from "gatsby";
 import { Link, useTranslation } from "gatsby-plugin-react-i18next";
-import {
-  ArrowRight,
-  Code,
-  Github,
-  Globe,
-  Languages,
-  Linkedin,
-  Mail,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import * as React from "react";
 import Layout from "../components/layout";
 import { SEO } from "../components/seo";
 import getIcon from "../utils/get-icon";
-import ProfileCard from "@/components/ProfileCard";
-const Icons: Record<string, React.ElementType> = {
-  Code,
-  Github,
-  Globe,
-  Languages,
-  Linkedin,
-  Mail,
-};
 
 const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const socialLinks = data.allSocialLinksYaml.nodes;
 
   return (
