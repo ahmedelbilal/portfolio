@@ -5,23 +5,21 @@ const LanguageSwitcher: React.FC = () => {
   const { languages, language, changeLanguage } = useI18next();
 
   return (
-    <div className="relative">
-      <select
-        value={language}
-        onChange={(e) => changeLanguage(e.target.value)}
-        className="bg-transparent cursor-pointer font-medium focus:outline-none"
-      >
-        {languages.map((lang) => (
-          <option
-            key={lang}
-            value={lang}
-            className="bg-white dark:bg-slate-800 cursor-target"
-          >
-            {lang.toUpperCase()}
-          </option>
-        ))}
-      </select>
-    </div>
+    <select
+      value={language}
+      onChange={(e) => changeLanguage(e.target.value)}
+      className="bg-transparent cursor-pointer font-medium focus:outline-none"
+    >
+      {languages.map((lang) => (
+        <option
+          key={lang}
+          value={lang}
+          className="bg-white dark:bg-slate-800 cursor-target"
+        >
+          {lang.toUpperCase()}
+        </option>
+      ))}
+    </select>
   );
 };
 
