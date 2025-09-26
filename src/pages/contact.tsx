@@ -242,14 +242,6 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
                 })}
               </div>
             </div>
-
-            <div className="mt-8 p-4 rounded-lg bg-blue-100 dark:bg-blue-900/30 border dark:border-none border-blue-300 dark:border-blue-700">
-              <h3 className="font-medium flex items-center gap-2">
-                <Clock size={18} className="text-blue-600" />
-                {t("current_availability")}
-              </h3>
-              <p className="mt-2 text-sm">{t("availability_text")}</p>
-            </div>
           </div>
         </div>
       </section>
