@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
   // Only allow "light" or "dark"
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
 
   // Apply the selected theme to <html> and save it
   const applyTheme = (newTheme: "light" | "dark") => {
