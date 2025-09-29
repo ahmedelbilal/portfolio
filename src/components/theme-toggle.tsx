@@ -1,4 +1,4 @@
-import { Moon, Sun } from "lucide-react"; // Add an icon for system theme
+import { Moon, Sun } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
