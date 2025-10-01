@@ -5,13 +5,11 @@ import Layout from "../components/layout";
 import { SEO } from "../components/seo";
 import getIcon from "../utils/get-icon";
 
-// Define the skill interface
 interface Skill {
   name: string;
   logo: string;
 }
 
-// Define the category interface
 interface SkillCategory {
   name: string;
   icon: string;
