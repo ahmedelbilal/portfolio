@@ -17,7 +17,6 @@ const ContactPage: React.FC<PageProps<Queries.ContactPageQuery>> = ({
   >("idle");
   const [errorMessage, setErrorMessage] = React.useState<string>("");
 
-  // Handle form submission
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormStatus("loading");
