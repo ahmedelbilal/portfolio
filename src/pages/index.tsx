@@ -12,7 +12,6 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
 
   return (
     <Layout>
-      {/* Hero Section */}
       <section className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto gap-10 px-6 py-20">
         {/* Text */}
         <div className="text-center md:text-start max-w-xl">
