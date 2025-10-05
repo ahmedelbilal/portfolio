@@ -1,4 +1,4 @@
-import { graphql, type HeadFC, type PageProps } from "gatsby";
+seeimport { graphql, type HeadFC, type PageProps } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 import Layout from "../components/layout";
@@ -22,7 +22,6 @@ const SkillsPage: React.FC<PageProps<Queries.SkillsPageQuery>> = ({ data }) => {
 
   const skillCategories = data.allSkillsYaml.nodes as SkillCategory[];
 
-  // Render skill card
   const renderSkillCard = (skill: Skill, index: number) => {
     return (
       <div
