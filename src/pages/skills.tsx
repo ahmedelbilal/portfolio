@@ -77,7 +77,6 @@ export const Head: HeadFC<Queries.SkillsPageQuery> = ({ location, data }) => {
     return <SEO location={location} />;
   }
 
-  // Access to translation
   const t = JSON.parse(localeNode.data);
 
   const title = `${t["ahmed"]} | ${t["skills"]}`;
