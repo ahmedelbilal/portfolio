@@ -43,7 +43,6 @@ const SkillsPage: React.FC<PageProps<Queries.SkillsPageQuery>> = ({ data }) => {
 
   return (
     <Layout>
-      {/* Skills Grid */}
       <section className="max-w-6xl mx-auto px-6 pb-20 space-y-12 mt-10">
         {skillCategories.map((currentCategory) => (
           <div>
