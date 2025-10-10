@@ -1,4 +1,3 @@
-// src/components/SEO.tsx
 import React, { PropsWithChildren } from "react";
 import { useSiteMetadata } from "../hooks/use-site-metadata";
 
