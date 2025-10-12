@@ -6,5 +6,9 @@
   "shiporbit": {
     "title": "Piattaforma di spedizione che collega trasportatori e mittenti",
     "description": "ShipOrbit è una piattaforma di spedizione moderna che collega trasportatori e mittenti. I mittenti possono pubblicare richieste di spedizione e i trasportatori possono offrire i loro servizi."
+  },
+  "lidolink": {
+    "title": "Agente di Prenotazione Ristoranti",
+    "description": "Agente di prenotazione ristoranti con sede in Italia che consente agli utenti di prenotare un tavolo nel loro ristorante preferito."
   }
 }

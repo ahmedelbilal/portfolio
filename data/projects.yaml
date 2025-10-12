@@ -1,3 +1,17 @@
+- projectId: lidolink
+  tags:
+    - Python
+    - Django
+    - Postgresql
+    - Docker
+    - Openai
+    - Next.js
+    - React
+    - TypeScript
+    - Tailwind
+  image: https://lidolink.com/images/og.png
+  demoUrl: https://lidolink.com
+  githubUrl: https://github.com/lidolink
 - projectId: shiporbit
   tags:
     - Python

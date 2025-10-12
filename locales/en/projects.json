@@ -6,5 +6,9 @@
   "shiporbit": {
     "title": "Shipping Platform Connecting Carriers and Shippers",
     "description": "ShipOrbit is a modern shipping platform that connects carriers with shippers. Shippers can post shipping requests, and carriers can offer their services."
+  },
+  "lidolink": {
+    "title": "Restaurant Booking Agent",
+    "description": "Restaurant Booking Agent based on Italy, it allows users to book a table in restaurant of their favorite."
   }
 }

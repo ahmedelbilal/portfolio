@@ -6,5 +6,9 @@
   "shiporbit": {
     "title": "Versandplattform, die Spediteure und Versender verbindet",
     "description": "ShipOrbit ist eine moderne Versandplattform, die Spediteure mit Versendern verbindet. Versender können Versandaufträge einstellen, und Spediteure bieten ihre Dienste an."
+  },
+  "lidolink": {
+    "title": "Restaurant-Buchungsagent",
+    "description": "Ein Restaurant-Buchungsagent mit Sitz in Italien, der es Benutzern ermöglicht, einen Tisch in ihrem Lieblingsrestaurant zu reservieren."
   }
 }
