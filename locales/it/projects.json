@@ -10,5 +10,9 @@
   "lidolink": {
     "title": "Agente di Prenotazione Ristoranti",
     "description": "Agente di prenotazione ristoranti con sede in Italia che consente agli utenti di prenotare un tavolo nel loro ristorante preferito."
+  },
+  "portfolio": {
+    "title": "Portfolio Sviluppatore Software",
+    "description": "Un sito web personale per mostrare progetti, competenze e la possibilità di contatto."
   }
 }

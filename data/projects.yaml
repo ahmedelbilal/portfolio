@@ -34,3 +34,13 @@
   image: /images/devflow.png
   demoUrl: https://devflow.ahmedelbilal.com
   githubUrl: https://github.com/ahmed-sudani/devflow
+- projectId: portfolio
+  tags:
+    - Gatsby
+    - TypeScript
+    - React
+    - Tailwind
+    - Graphql
+  image: /images/logo.png
+  demoUrl: https://ahmedelbilal.com
+  githubUrl: https://github.com/ahmed-sudani/portfolio

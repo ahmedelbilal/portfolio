@@ -10,5 +10,9 @@
   "lidolink": {
     "title": "Restaurant Booking Agent",
     "description": "Restaurant Booking Agent based on Italy, it allows users to book a table in restaurant of their favorite."
+  },
+  "portfolio": {
+    "title": "Software Developer Portfolio",
+    "description": "A personal portfolio website to showcase projects, skills and a contact ability."
   }
 }
