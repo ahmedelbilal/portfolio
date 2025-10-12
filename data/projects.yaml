@@ -33,7 +33,7 @@
     - Tailwind
   image: /images/devflow.png
   demoUrl: https://devflow.ahmedelbilal.com
-  githubUrl: https://github.com/ahmed-sudani/devflow
+  githubUrl: https://github.com/ahmedelbilal/devflow
 - projectId: portfolio
   tags:
     - Gatsby
@@ -43,4 +43,4 @@
     - Graphql
   image: /images/logo.png
   demoUrl: https://ahmedelbilal.com
-  githubUrl: https://github.com/ahmed-sudani/portfolio
+  githubUrl: https://github.com/ahmedelbilal/portfolio
