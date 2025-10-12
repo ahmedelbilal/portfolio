@@ -1,4 +1,4 @@
-seeimport { graphql, type HeadFC, type PageProps } from "gatsby";
+import { graphql, type HeadFC, type PageProps } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 import Layout from "../components/layout";
