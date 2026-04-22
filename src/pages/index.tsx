@@ -17,9 +17,6 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
         <div className="text-center md:text-start max-w-xl">
           <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
             {t("greeting")}
-            <span className="inline-block animate-wave origin-bottom-right">
-              👋
-            </span>
           </h1>
 
           <p className="mt-4 text-lg md:text-xl opacity-90">{t("bio")}</p>
@@ -27,11 +24,18 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
           <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
             <Link
               to="/contact"
-              className="flex items-center gap-2 cursor-target rounded-lg font-medium hover:scale-105 hover:-rotate-1"
+              className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white cursor-target rounded-lg font-medium hover:scale-105 hover:-rotate-1 transition-all"
             >
               {t("contact")}
               <ArrowRight size={18} className="animate-bounce-subtle" />
             </Link>
+            <a
+              href="/Ahmed Elbilal Resume.pdf"
+              download
+              className="flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-gray-600 cursor-target rounded-lg font-medium hover:scale-105 transition-all text-gray-700 dark:text-gray-200"
+            >
+              {t("download_resume")}
+            </a>
           </div>
         </div>
 
@@ -79,7 +83,7 @@ export default IndexPage;
 
 export const Head: HeadFC<Queries.SkillsPageQuery> = ({ location, data }) => {
   const localeNode = data.locales.edges.find(
-    (e) => e.node.ns === "translation"
+    (e) => e.node.ns === "translation",
   )?.node;
 
   if (!localeNode?.data || !localeNode?.language) {
