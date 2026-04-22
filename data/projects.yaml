@@ -10,7 +10,7 @@
     - TypeScript
     - Tailwind
   image: https://lidolink.com/images/og.png
-  demoUrl: https://lidolink.com
+  demoUrl: https://lidolink.com/en/about
   githubUrl: https://github.com/lidolink
 - projectId: shiporbit
   tags:
@@ -34,6 +34,16 @@
   image: /images/devflow.png
   demoUrl: https://devflow.ahmedelbilal.com
   githubUrl: https://github.com/ahmedelbilal/devflow
+- projectId: lasatech
+  tags:
+    - Gatsby
+    - React
+    - TypeScript
+    - Tailwind
+    - SEO
+  image: /images/lasatech.png
+  demoUrl: https://lasatech.lasasd.com/
+  githubUrl: https://github.com/ahmedelbilal/lasa-technology
 - projectId: portfolio
   tags:
     - Gatsby
