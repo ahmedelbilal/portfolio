@@ -1,4 +1,8 @@
 {
+  "rufuf": {
+    "title": "Rufuf — Mehrmandanten-Essenslieferplattform",
+    "description": "Vollständige Essenslieferplattform mit Admin-Dashboard, Partner-App und Captain-App. Entwickelt mit NestJS, React und React Native."
+  },
   "devflow": {
     "title": "Soziale Plattform für Entwickler",
     "description": "Eine moderne soziale Plattform für Entwickler. Nutzer können Beiträge erstellen, speichern, liken und teilen. GitHub-Login wird unterstützt und Nutzer können sich gegenseitig folgen, um in Kontakt zu bleiben."

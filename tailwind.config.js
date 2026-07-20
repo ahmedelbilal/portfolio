@@ -6,7 +6,11 @@ module.exports = {
     "./data/*",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Cairo", "sans-serif"],
+      },
+    },
   },
   plugins: [],
   darkMode: "class",

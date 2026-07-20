@@ -1,3 +1,50 @@
+- projectId: rufuf
+  tags:
+    - NestJS
+    - React
+    - React Native
+    - TypeScript
+    - Tailwind
+    - PostgreSQL
+    - Expo
+    - Docker
+  image: https://rufuf.net/logo/logo-04.png
+  demoUrl: https://verity-tech.net/portfolio/rufuf-platform-mobile-application?locale=en
+
+- projectId: devflow
+  tags:
+    - Next.js
+    - TypeScript
+    - Postgresql
+    - React
+    - Tailwind
+  image: /images/devflow.png
+  demoUrl: https://devflow-opal.vercel.app/
+  githubUrl: https://github.com/ahmedelbilal/devflow
+
+- projectId: shiporbit
+  tags:
+    - Python
+    - Django
+    - Postgresql
+    - Stripe
+    - React
+    - Tailwind
+    - Docker
+  image: /images/shiporbit.png
+  demoUrl: https://fr-henna.vercel.app/
+  githubUrl: https://github.com/ShipOrbit
+
+- projectId: lasatech
+  tags:
+    - Gatsby
+    - React
+    - TypeScript
+    - Tailwind
+    - SEO
+  image: /images/lasatech.png
+  demoUrl: https://lasatech.lasasd.com/
+
 - projectId: lidolink
   tags:
     - Python
@@ -12,38 +59,7 @@
   image: https://lidolink.com/images/og.png
   demoUrl: https://lidolink.com/en/about
   githubUrl: https://github.com/lidolink
-- projectId: shiporbit
-  tags:
-    - Python
-    - Django
-    - Postgresql
-    - Stripe
-    - React
-    - Tailwind
-    - Docker
-  image: /images/shiporbit.png
-  demoUrl: https://shiporbit.ahmedelbilal.com
-  githubUrl: https://github.com/ShipOrbit
-- projectId: devflow
-  tags:
-    - Next.js
-    - TypeScript
-    - Postgresql
-    - React
-    - Tailwind
-  image: /images/devflow.png
-  demoUrl: https://devflow.ahmedelbilal.com
-  githubUrl: https://github.com/ahmedelbilal/devflow
-- projectId: lasatech
-  tags:
-    - Gatsby
-    - React
-    - TypeScript
-    - Tailwind
-    - SEO
-  image: /images/lasatech.png
-  demoUrl: https://lasatech.lasasd.com/
-  githubUrl: https://github.com/ahmedelbilal/lasa-technology
+
 - projectId: portfolio
   tags:
     - Gatsby
@@ -52,5 +68,5 @@
     - Tailwind
     - Graphql
   image: /images/logo.png
-  demoUrl: https://ahmedelbilal.com
+  demoUrl: /
   githubUrl: https://github.com/ahmedelbilal/portfolio

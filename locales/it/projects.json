@@ -1,4 +1,8 @@
 {
+  "rufuf": {
+    "title": "Rufuf — Piattaforma di Consegna Cibo Multi-Tenant",
+    "description": "Piattaforma completa per la consegna di cibo con Dashboard Amministrativa, App Partner e App Captain. Sviluppata con NestJS, React e React Native."
+  },
   "devflow": {
     "title": "Piattaforma Sociale per Sviluppatori",
     "description": "Una moderna piattaforma sociale per sviluppatori. Gli utenti possono pubblicare, salvare nei preferiti, mettere mi piace e condividere i post. Supporta l'accesso con GitHub e consente di seguire altri sviluppatori."

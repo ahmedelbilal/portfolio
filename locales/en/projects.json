@@ -1,4 +1,8 @@
 {
+  "rufuf": {
+    "title": "Rufuf — Multi-Tenant Food Delivery Platform",
+    "description": "Full-stack food delivery platform with an Admin Dashboard, Partner App, and Captain App. Built with NestJS, React, and React Native."
+  },
   "devflow": {
     "title": "Social Platform for Developers",
     "description": "A modern social platform for developers. Users can post, bookmark, like, and share content. GitHub login is supported, and users can follow each other to stay connected."
